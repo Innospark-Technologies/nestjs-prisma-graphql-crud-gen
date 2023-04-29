@@ -13,9 +13,9 @@ export const generateCommonEnums = (dmmfDocument: DmmfDocument, project: Project
 
   const datamodelEnumNames = dmmfDocument.datamodel.enums.map((enumDef) => enumDef.typeName)
   datamodelEnumNames.forEach((enumDef) => {
-      sourceFile.addStatements([
-          `export * from "../enums/${enumDef}.enum";`
-      ])
+    sourceFile.addStatements([
+        `export * from "../enums/${enumDef}.enum";`
+    ])
   })
   dmmfDocument.schema.enums
     // skip enums from datamodel
