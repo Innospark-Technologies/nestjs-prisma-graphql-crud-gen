@@ -9,7 +9,7 @@ export const generateService = (project: Project, outputDir: string, model: DMMF
   const sourceFile = project.createSourceFile(filePath, undefined, { overwrite: true })
 
   sourceFile.addStatements(`import { Injectable } from '@nestjs/common'
-    import { PrismaService } from '../../prisma.service'
+    import { PrismaService } from 'nestjs-prisma'
     import { Prisma } from '@prisma/client'
     
     @Injectable()
