@@ -11,7 +11,7 @@ export const generateModule = (project: Project, outputDir: string, model: DMMF.
   sourceFile.addStatements(`import { Module } from '@nestjs/common'
     import { ${model.name}Service } from './${modelName}.service'
     import { ${model.name}Resolver } from './${modelName}.resolver'
-    import { PrismaService } from '../../prisma.service'
+    import { PrismaService } from 'nestjs-prisma'
     
     @Module({
       providers: [${model.name}Resolver, ${model.name}Service, PrismaService]
