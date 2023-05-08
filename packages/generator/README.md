@@ -1,8 +1,9 @@
 <div align="center">
     <img src="./icon.png" alt="icon" height="128" width="128">
 </div>
-
-# NestJS Prisma GraphQL CRUD Generater
+Fork from 
+<a href="https://github.com/mk668a/nestjs-prisma-graphql-crud-gen">mk668a/nestjs-prisma-graphql-crud-gen</a>
+# NestJS Prisma GraphQL CRUD Generator
 
 Generate CRUD resolvers from GraphQL schema with NestJS and Prisma
 
