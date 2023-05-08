@@ -1,7 +1,7 @@
 {
   "name": "@martirosyan-kar/nestjs-prisma-graphql-crud-gen",
   "description": "Generate CRUD resolvers from GraphQL schema with NestJS and Prisma",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "main": "dist-cjs/index.js",
   "types": "dist-cjs/index.d.ts",
   "license": "MIT",
@@ -40,16 +40,16 @@
     "ts-jest": "27.1.4",
     "typescript": "4.7.4"
   },
-  "homepage": "https://github.com/mk668a/nestjs-prisma-graphql-crud-gen",
+  "homepage": "https://github.com/martirosyan-kar/nestjs-prisma-graphql-crud-gen",
   "files": [
     "dist-cjs",
     "dist-esm"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mk668a/nestjs-prisma-graphql-crud-gen.git"
+    "url": "git+https://github.com/martirosyan-kar/nestjs-prisma-graphql-crud-gen"
   },
-  "author": "mk668a <msftoaa@gmail.com>",
+  "author": "martirosyan-kar <martirosyan.kar@gmail.com>",
   "keywords": [
     "prisma",
     "prisma2",
