@@ -24,6 +24,6 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Publish
         working-directory: ./packages/generator
-        run: npm publish
+        run: npx semantic-release
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
