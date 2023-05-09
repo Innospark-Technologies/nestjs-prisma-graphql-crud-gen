@@ -25,14 +25,16 @@ export const generateOutput = (dmmfDocument: DmmfDocument, project: Project, out
       .filter((type) => type.modelName !== model.name)
       .forEach((type) => {
         // import args
-        for (const item of [...new Set(type.fields.filter((it) => it.argsTypeName).map((it) => it.argsTypeName!))].sort()) {
-          if (!args.includes(item)) args.push(item)
-        }
-        // import outputs
-        for (const item of [
-          ...new Set(type.fields.filter((field) => field.outputType.location === 'outputObjectTypes').map((field) => field.outputType.type)),
-        ].sort()) {
-          if (!outputs.includes(item)) outputs.push(item)
+        if(type.modelName !== model.name)  {
+          for (const item of [...new Set(type.fields.filter((it) => it.argsTypeName).map((it) => it.argsTypeName!))].sort()) {
+            if (!args.includes(item)) args.push(item)
+          }
+          // import outputs
+          for (const item of [
+            ...new Set(type.fields.filter((field) => field.outputType.location === 'outputObjectTypes').map((field) => field.outputType.type)),
+          ].sort()) {
+            if (!outputs.includes(item)) outputs.push(item)
+          }
         }
         // import enums
         for (const item of [
