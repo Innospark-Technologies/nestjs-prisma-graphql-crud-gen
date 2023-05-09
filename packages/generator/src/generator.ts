@@ -1,5 +1,5 @@
 import { GeneratorOptions } from '@prisma/generator-helper'
-import { getDMMF, parseEnvValue } from '@prisma/sdk'
+import { getDMMF, parseEnvValue } from '@prisma/internals'
 import path from 'path'
 import { ModuleKind, Project, ScriptTarget } from 'ts-morph'
 import { DmmfDocument } from './generator/dmmf/DmmfDocument'
