@@ -48,7 +48,13 @@ export const generateOutput = (dmmfDocument: DmmfDocument, project: Project, out
       })
     if (args.length) sourceFile.addImportDeclaration({ moduleSpecifier: path.posix.join('.', `${modelName}.args`), namedImports: args })
     if (outputs.length) sourceFile.addImportDeclaration({ moduleSpecifier: path.posix.join('.', `${modelName}.output`), namedImports: outputs })
-    if (enums.length) sourceFile.addImportDeclaration({ moduleSpecifier: path.posix.join('.', `${modelName}.enum`), namedImports: enums })
+
+    if (enums.length) {
+      sourceFile.addImportDeclaration({
+        moduleSpecifier: '../../common/enums',
+        namedImports: enums,
+      })
+    }
 
     sourceFile.addClass({
       name: type.typeName,

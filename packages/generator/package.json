@@ -6,7 +6,7 @@
   "types": "dist-cjs/index.d.ts",
   "license": "MIT",
   "bin": {
-    "nestjs-prisma-graphql-crud-gen": "./dist-cjs/index.js"
+    "nestjs-prisma-graphql-crud-gen": "dist-cjs/index.js"
   },
   "engines": {
     "node": ">=14.0"
@@ -48,7 +48,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martirosyan-kar/nestjs-prisma-graphql-crud-gen"
+    "url": "git+https://github.com/martirosyan-kar/nestjs-prisma-graphql-crud-gen.git"
   },
   "author": "martirosyan-kar <martirosyan.kar@gmail.com>",
   "keywords": [
@@ -80,5 +80,8 @@
     "branches": [
       "main"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/martirosyan-kar/nestjs-prisma-graphql-crud-gen/issues"
   }
 }

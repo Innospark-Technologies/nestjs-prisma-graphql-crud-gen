@@ -38,7 +38,10 @@ export const generateCommonOutput = (dmmfDocument: DmmfDocument, project: Projec
         .filter((fieldType) => fieldType.location === 'enumTypes')
         .map((fieldType) => fieldType.type)
       for (const item of [...new Set(enums)].sort()) {
-        sourceFile.addImportDeclaration({ moduleSpecifier: path.posix.join('../enums', `${camelCase(item)}.args`), namedImports: [item] })
+        sourceFile.addImportDeclaration({
+          moduleSpecifier: '../../common/enums',
+          namedImports: [item],
+        })
       }
     })
 
